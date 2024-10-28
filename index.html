@@ -1,0 +1,127 @@
+<html>
+<head>
+	<title>Inicio | RECOVER</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8; width=device-width, initial-scale=1.0" name="viewport"/>
+	<link rel="stylesheet" href="inicio/style.css">
+</head>	
+<body>
+	<header>
+    <img src="inicio/img/recover_logo.png" class="img_logo">
+	</header>
+  	<main>
+      <h2 style="font-size: 4vw; padding-top: 17vw;">¡Bienvenido a RECOVER Digitalización!</h2>
+      <p>Nosotros nos especializamos en <b>recuperar sus videos</b> de momentos memorables para usted.</p>
+      <h2>Servicios</h2>
+      <p>Digitalizamos videos de los <b>siguientes formatos:</b></p>
+      <table width="80%">
+        <tr>
+        <th width="50%" style="border-radius: 10px 0 0 0;">
+          Formato
+        </th>
+        <th width="50%" style="border-radius: 0 10px 0 0;">
+          Precio por hora
+        </th>
+        </tr>
+        <tr>
+        <td>
+          <img src="inicio/img/vhs.png" style="width: 40%; height: auto; margin: 0; padding-top: 2.5em; padding-bottom: 0.5em;">
+          <br>
+          <p class="table">VHS</p>
+        </td>
+        <td>
+          <p class="table">$ 120.00 MXN</p>
+        </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="inicio/img/8mm_hi8.png" style="width: 40%; height: auto; margin: 0; padding-top: 2.5em; padding-bottom: 0.5em;">
+            <br>
+            <p class="table">8mm y Hi-8</p>
+          </td>
+          <td>
+            <p class="table">$ 115.00 MXN</p>
+          </td>
+          </tr>
+          <tr>
+            <td>
+              <img src="inicio/img/mini_dv.png" style="width: 40%; height: auto; margin: 0; padding-top: 2.5em; padding-bottom: 0.5em;">
+              <br>
+              <p class="table">Mini DV</p>
+            </td>
+            <td>
+              <p class="table">$ 100.00 MXN</p>
+            </td>
+            <tr>
+            <td style="border-radius: 0 0 0 10px;">
+              <img src="inicio/img/dvd.png" style="width: 40%; height: auto; margin: 0; padding-top: 2.5em; padding-bottom: 0.5em;">
+              <br>
+              <p class="table">DVD</p>
+            </td>
+            <td style="border-radius: 0 0 10px 0;">
+              <p class="table">$ 95.00 MXN</p>
+            </td>
+            </tr>
+      </table>
+        <h2 style="padding-top: 2%;">Muestras</h2>
+      <p>Estas son muestras de algunos videos que hemos digitalizado.</p>
+      <center>
+        <section id="slide">  
+        <div class="slideshow-container" style="background-color: #2e2e2e;">
+          <div class="slide1 fade">
+            <video style="width: 75%; height: auto; margin: 0; padding: 3% 0;" class="videoslide2" poster="inicio/vid/vhs.png" controls><source src="inicio/vid/vhs.mp4" type="video/mp4"></video>
+            <div style="background-color: #000; color: #fff; padding: 1px;"><p class="slide">VHS</p></div>
+          </div>
+          <div class="slide1 fade">
+            <video style="width: 75%; height: auto; margin: 0; padding: 3% 0;" class="videoslide2" poster="inicio/vid/8mm_hi8.png" controls><source src="inicio/vid/8mm_hi8.mp4" type="video/mp4"></video>
+            <div style="background-color: #000; color: #fff; padding: 1px;"><p class="slide">8mm y Hi8</p></div>
+          </div>
+          <div class="slide1 fade">
+            <video style="width: 75%; height: auto; margin: 0; padding: 3% 0;" class="videoslide2" poster="inicio/vid/mini_dv.png" controls><source src="inicio/vid/mini_dv.mp4" type="video/mp4"></video>
+            <div style="background-color: #000; color: #fff; padding: 1px;"><p class="slide">Mini DV</p></div>
+          </div>
+          <div class="slide1 fade">
+            <video style="width: 75%; height: auto; margin: 0; padding: 3% 0;" class="videoslide2" poster="inicio/vid/dvd.png" controls><source src="inicio/vid/dvd.mp4" type="video/mp4"></video>
+            <div style="background-color: #000; color: #fff; padding: 1px;"><p class="slide">DVD</p></div>
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+        </section>
+        <section id="follow_us" style="padding-bottom: 2em;">
+          <h2 style="padding-top: 2%; padding-bottom: 0.5em;">Síguenos en Nuestras Redes</h2>
+        <a style="font-size: 1em;" class="instagram" href="https://www.instagram.com/recoverdigitalizacion/">Instagram</a>&nbsp; &nbsp;
+        <a style="font-size: 1em;" class="facebook" target="_blank" href="https://api.whatsapp.com/send?phone=5216622266590">Facebook</a>
+        </section>
+        <section id="contacto" style="padding-bottom: 2em;">
+        <h2 style="padding-top: 2%; padding-bottom: 0.5em;">Contacto</h2>
+      <a style="font-size: 1em;" class="link_mail" href="mailto:recoverdigitalizacionhmo@gmail.com">Correo electrónico</a>&nbsp; &nbsp;
+      <a style="font-size: 1em;" class="whatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5216622266590">WhatsApp</a>
+      </section>
+  </center>
+  </main>
+  <script>
+    let slideIndex = [1,1];
+    let slideId = ["slide1"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+    
+    function plusSlides(n, no) {
+      showSlides(slideIndex[no] += n, no);
+    }
+    
+    function showSlides(n, no) {
+      let i;
+      let x = document.getElementsByClassName(slideId[no]);
+      if (n > x.length) {slideIndex[no] = 1}    
+      if (n < 1) {slideIndex[no] = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";  
+      }
+      x[slideIndex[no]-1].style.display = "block";  
+    }
+    </script>
+  <div class="footer1">
+    <p style="font-weight: 400;">Copyright © 2023 RECOVER</p>
+  </div>
+</body>
+</html>
